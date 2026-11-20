@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Maya Chen — Independent Creative Director',
-  description: 'A calling card for Maya Chen, brand designer and creative director in San Francisco. Say hello and let’s make something meaningful.',
+  title: 'Shashi Kiran — Independent Consultant',
+  description: 'A calling card for Shashi Kiran, an independent consultant. Say hello and let’s make something meaningful.',
   generator: 'v0.app',
   icons: {
     icon: [

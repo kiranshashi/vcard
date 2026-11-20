@@ -11,26 +11,26 @@ import {
   MapPin,
 } from "lucide-react"
 
-const email = "hello@mayachen.studio"
+const email = "kiransaipessse@gmail.com"
 
 function downloadContact() {
   const contact = [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    "FN:Maya Chen",
-    "N:Maya;Chen;;;",
-    "ORG:Independent Creative Director",
-    "TITLE:Brand designer & creative director",
+    "FN:Shashi Kiran",
+    "N:Kiran;Shashi;;;",
+    "ORG:Independent Consultant",
+    "TITLE:Independent Consultant",
     `EMAIL;TYPE=INTERNET,WORK:${email}`,
     "TEL;TYPE=WORK,VOICE:+14155550148",
     "URL:https://mayachen.studio",
-    "ADR;TYPE=WORK:;;San Francisco;CA;;;USA",
+    "ADR;TYPE=WORK:;;;Bangalore;Karnataka;;India",
     "END:VCARD",
   ].join("\r\n")
   const url = URL.createObjectURL(new Blob([contact], { type: "text/vcard" }))
   const link = document.createElement("a")
   link.href = url
-  link.download = "maya-chen.vcf"
+  link.download = "shashi-kiran.vcf"
   document.body.append(link)
   link.click()
   link.remove()
@@ -53,11 +53,11 @@ export function CallingCard() {
   return (
     <main className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Maya Chen, home">
-          <span className="wordmark-mark" aria-hidden="true">MC</span>
+        <a className="wordmark" href="#home" aria-label="Shashi Kiran, home">
+          <span className="wordmark-mark" aria-hidden="true">SK</span>
           <span className="wordmark-copy">
-            <strong>Maya Chen</strong>
-            <span>Independent creative director</span>
+            <strong>Shashi Kiran</strong>
+            <span>Independent Consultant</span>
           </span>
         </a>
         <nav className="header-nav" aria-label="Main navigation">
@@ -69,11 +69,10 @@ export function CallingCard() {
 
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> San Francisco · working everywhere</p>
-          <h1 id="hero-title">Making good ideas <em>impossible to ignore.</em></h1>
+          <p className="eyebrow"><span className="eyebrow-line" /> Bangalore, India · working everywhere</p>
+          <h1 id="hero-title">Turning complex challenges into<br /><em>simple solutions.</em></h1>
           <p className="hero-description">
-            I build thoughtful brands and digital experiences for people doing meaningful things.
-            Clear strategy, a little curiosity, and details that feel just right.
+            I&apos;m a Senior Software Engineer and Independent Consultant specializing in React, NetSuite SuiteCommerce, and custom business applications. I build scalable solutions, streamline workflows, and turn complex requirements into reliable software.
           </p>
           <div className="hero-actions" id="contact">
             <a className="button button-primary" href={`mailto:${email}`}>
@@ -86,27 +85,27 @@ export function CallingCard() {
           <div className="hero-footnote"><span className="footnote-rule" /> Good work begins with a conversation.</div>
         </div>
 
-        <aside className="profile-card" aria-label="Maya Chen's digital calling card">
+        <aside className="profile-card" aria-label="Shashi Kiran's digital calling card">
           <div className="card-image-wrap">
             <Image
               className="card-image"
-              src="/profile-maya.png"
-              alt="Maya Chen, creative director, smiling in her studio"
+              src="/calling-card-studio.png"
+              alt="Sunlit studio desk with an open notebook and muted color swatches"
               fill
               priority
               sizes="(max-width: 760px) 88vw, 420px"
             />
             <span className="card-edition">A little about me <span>01 / 01</span></span>
-            <span className="card-photo-caption">Ideas with intention.</span>
+            <span className="card-photo-caption">Driven by curiosity. Built with precision.</span>
           </div>
           <div className="card-info">
             <div className="card-title-row">
               <div>
-                <p className="card-kicker">Your next creative partner</p>
-                <h2>Maya Chen</h2>
-                <p className="card-role">Brand designer &amp; creative director</p>
+                <p className="card-kicker">YOUR TRUSTED TECHNICAL PARTNER</p>
+                <h2>Shashi Kiran</h2>
+                <p className="card-role">Independent Consultant</p>
               </div>
-              <span className="card-monogram" aria-hidden="true">M<span>.</span></span>
+              <span className="card-monogram" aria-hidden="true">SK<span>.</span></span>
             </div>
             <div className="card-contact-row">
               <a className="email-link" href={`mailto:${email}`}>{email}</a>
@@ -117,32 +116,33 @@ export function CallingCard() {
             <p className="copy-feedback" aria-live="polite">{copied ? "Email copied to clipboard" : ""}</p>
           </div>
         </aside>
-        <div className="hero-index" aria-hidden="true">INDEPENDENT BY DESIGN <span>—</span> EST. 2018</div>
+        <div className="hero-index" aria-hidden="true">INDEPENDENT THINKING. PURPOSEFUL ENGINEERING.</div>
       </section>
 
-      <section className="about-strip" id="about" aria-label="What I do">
-        <div className="about-intro">
-          <span className="section-number">01 — A GOOD FIT FOR</span>
-          <p>Small teams with<br />big-hearted ambition.</p>
-        </div>
-        <ul className="specialties">
-          <li><span>01</span> Brand identity</li>
-          <li><span>02</span> Digital experiences</li>
-          <li><span>03</span> Creative direction</li>
-        </ul>
-        <div className="about-location"><MapPin aria-hidden="true" /><span>Based in San Francisco<br />Available worldwide</span></div>
-      </section>
+<section className="about-strip" id="about" aria-label="What I do">
+          <div className="about-intro">
+            <span className="section-number">01 — IDEAL FOR</span>
+            <p>Small teams with<br />{" "}big-hearted ambition.</p>
+          </div>
+          <ul className="specialties">
+            <li><span>01</span> Custom Web Applications</li>
+            <li><span>02</span> NetSuite &amp; SuiteCommerce</li>
+            <li><span>03</span> System Integrations</li>
+            <li><span>04</span> Technical Consulting</li>
+          </ul>
+          <div className="about-location"><MapPin aria-hidden="true" /><span>Available for remote projects worldwide</span></div>
+        </section>
 
       <footer className="site-footer">
         <a className="footer-email" href={`mailto:${email}`}>Have a good one in mind? <span>Let&apos;s make it real.</span></a>
         <div className="footer-bottom">
-          <span>© 2026 Maya Chen Studio</span>
+          <span>© 2026 Shashi Kiran</span>
           <div className="social-links" aria-label="Social links">
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><span aria-hidden="true">ig</span></a>
-            <a href={`mailto:${email}`} aria-label="Email Maya"><Mail aria-hidden="true" /></a>
+            <a href={`mailto:${email}`} aria-label="Email Shashi Kiran"><Mail aria-hidden="true" /></a>
           </div>
-          <span className="footer-note">Made with intention, in California.</span>
+          <span className="footer-note">Made with intention, in Bangalore.</span>
         </div>
       </footer>
     </main>
