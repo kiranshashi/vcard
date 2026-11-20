@@ -116,7 +116,7 @@ export function CallingCard() {
             <p className="copy-feedback" aria-live="polite">{copied ? "Email copied to clipboard" : ""}</p>
           </div>
         </aside>
-        <div className="hero-index" aria-hidden="true">INDEPENDENT BY DESIGN <span>—</span> EST. 2018</div>
+        <div className="hero-index" aria-hidden="true">INDEPENDENT THINKING. PURPOSEFUL ENGINEERING.</div>
       </section>
 
 <section className="about-strip" id="about" aria-label="What I do">
