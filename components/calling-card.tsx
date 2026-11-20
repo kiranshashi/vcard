@@ -101,7 +101,7 @@ export function CallingCard() {
           <div className="card-info">
             <div className="card-title-row">
               <div>
-                <p className="card-kicker">Your next creative partner</p>
+                <p className="card-kicker">YOUR TRUSTED TECHNICAL PARTNER</p>
                 <h2>Shashi Kiran</h2>
                 <p className="card-role">Independent Consultant</p>
               </div>
