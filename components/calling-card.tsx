@@ -70,7 +70,7 @@ export function CallingCard() {
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Bangalore, India · working everywhere</p>
-          <h1 id="hero-title">Making good ideas <em>impossible to ignore.</em></h1>
+          <h1 id="hero-title">Turning complex challenges into<br /><em>simple solutions.</em></h1>
           <p className="hero-description">
             I build thoughtful brands and digital experiences for people doing meaningful things.
             Clear strategy, a little curiosity, and details that feel just right.
