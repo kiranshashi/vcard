@@ -11,7 +11,7 @@ import {
   MapPin,
 } from "lucide-react"
 
-const email = "hello@mayachen.studio"
+const email = "kiransaipessse@gmail.com"
 
 function downloadContact() {
   const contact = [
@@ -24,7 +24,7 @@ function downloadContact() {
     `EMAIL;TYPE=INTERNET,WORK:${email}`,
     "TEL;TYPE=WORK,VOICE:+14155550148",
     "URL:https://mayachen.studio",
-    "ADR;TYPE=WORK:;;San Francisco;CA;;;USA",
+    "ADR;TYPE=WORK:;;;Bangalore;Karnataka;;India",
     "END:VCARD",
   ].join("\r\n")
   const url = URL.createObjectURL(new Blob([contact], { type: "text/vcard" }))
@@ -69,7 +69,7 @@ export function CallingCard() {
 
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> San Francisco · working everywhere</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> Bangalore, India · working everywhere</p>
           <h1 id="hero-title">Making good ideas <em>impossible to ignore.</em></h1>
           <p className="hero-description">
             I build thoughtful brands and digital experiences for people doing meaningful things.
@@ -130,7 +130,7 @@ export function CallingCard() {
           <li><span>02</span> Digital experiences</li>
           <li><span>03</span> Creative direction</li>
         </ul>
-        <div className="about-location"><MapPin aria-hidden="true" /><span>Based in San Francisco<br />Available worldwide</span></div>
+        <div className="about-location"><MapPin aria-hidden="true" /><span>Based in Bangalore, India<br />Available worldwide</span></div>
       </section>
 
       <footer className="site-footer">
@@ -142,7 +142,7 @@ export function CallingCard() {
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><span aria-hidden="true">ig</span></a>
             <a href={`mailto:${email}`} aria-label="Email Shashi Kiran"><Mail aria-hidden="true" /></a>
           </div>
-          <span className="footer-note">Made with intention, in California.</span>
+          <span className="footer-note">Made with intention, in Bangalore.</span>
         </div>
       </footer>
     </main>
