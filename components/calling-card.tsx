@@ -96,7 +96,7 @@ export function CallingCard() {
               sizes="(max-width: 760px) 88vw, 420px"
             />
             <span className="card-edition">A little about me <span>01 / 01</span></span>
-            <span className="card-photo-caption">Ideas with intention.</span>
+            <span className="card-photo-caption">Driven by curiosity. Built with precision.</span>
           </div>
           <div className="card-info">
             <div className="card-title-row">
