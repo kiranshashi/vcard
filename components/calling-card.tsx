@@ -72,8 +72,7 @@ export function CallingCard() {
           <p className="eyebrow"><span className="eyebrow-line" /> Bangalore, India · working everywhere</p>
           <h1 id="hero-title">Turning complex challenges into<br /><em>simple solutions.</em></h1>
           <p className="hero-description">
-            I build thoughtful brands and digital experiences for people doing meaningful things.
-            Clear strategy, a little curiosity, and details that feel just right.
+            I&apos;m a Senior Software Engineer and Independent Consultant specializing in React, NetSuite SuiteCommerce, and custom business applications. I build scalable solutions, streamline workflows, and turn complex requirements into reliable software.
           </p>
           <div className="hero-actions" id="contact">
             <a className="button button-primary" href={`mailto:${email}`}>
