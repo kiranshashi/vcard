@@ -17,10 +17,10 @@ function downloadContact() {
   const contact = [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    "FN:Maya Chen",
-    "N:Maya;Chen;;;",
-    "ORG:Independent Creative Director",
-    "TITLE:Brand designer & creative director",
+    "FN:Shashi Kiran",
+    "N:Kiran;Shashi;;;",
+    "ORG:Independent Consultant",
+    "TITLE:Independent Consultant",
     `EMAIL;TYPE=INTERNET,WORK:${email}`,
     "TEL;TYPE=WORK,VOICE:+14155550148",
     "URL:https://mayachen.studio",
@@ -30,7 +30,7 @@ function downloadContact() {
   const url = URL.createObjectURL(new Blob([contact], { type: "text/vcard" }))
   const link = document.createElement("a")
   link.href = url
-  link.download = "maya-chen.vcf"
+  link.download = "shashi-kiran.vcf"
   document.body.append(link)
   link.click()
   link.remove()
@@ -53,11 +53,11 @@ export function CallingCard() {
   return (
     <main className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Maya Chen, home">
+        <a className="wordmark" href="#home" aria-label="Shashi Kiran, home">
           <span className="wordmark-mark" aria-hidden="true">MC</span>
           <span className="wordmark-copy">
-            <strong>Maya Chen</strong>
-            <span>Independent creative director</span>
+            <strong>Shashi Kiran</strong>
+            <span>Independent Consultant</span>
           </span>
         </a>
         <nav className="header-nav" aria-label="Main navigation">
@@ -86,12 +86,12 @@ export function CallingCard() {
           <div className="hero-footnote"><span className="footnote-rule" /> Good work begins with a conversation.</div>
         </div>
 
-        <aside className="profile-card" aria-label="Maya Chen's digital calling card">
+        <aside className="profile-card" aria-label="Shashi Kiran's digital calling card">
           <div className="card-image-wrap">
             <Image
               className="card-image"
               src="/profile-maya.png"
-              alt="Maya Chen, creative director, smiling in her studio"
+              alt="Portrait shown on the calling card"
               fill
               priority
               sizes="(max-width: 760px) 88vw, 420px"
@@ -103,8 +103,8 @@ export function CallingCard() {
             <div className="card-title-row">
               <div>
                 <p className="card-kicker">Your next creative partner</p>
-                <h2>Maya Chen</h2>
-                <p className="card-role">Brand designer &amp; creative director</p>
+                <h2>Shashi Kiran</h2>
+                <p className="card-role">Independent Consultant</p>
               </div>
               <span className="card-monogram" aria-hidden="true">M<span>.</span></span>
             </div>
@@ -136,11 +136,11 @@ export function CallingCard() {
       <footer className="site-footer">
         <a className="footer-email" href={`mailto:${email}`}>Have a good one in mind? <span>Let&apos;s make it real.</span></a>
         <div className="footer-bottom">
-          <span>© 2026 Maya Chen Studio</span>
+          <span>© 2026 Shashi Kiran</span>
           <div className="social-links" aria-label="Social links">
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><span aria-hidden="true">ig</span></a>
-            <a href={`mailto:${email}`} aria-label="Email Maya"><Mail aria-hidden="true" /></a>
+            <a href={`mailto:${email}`} aria-label="Email Shashi Kiran"><Mail aria-hidden="true" /></a>
           </div>
           <span className="footer-note">Made with intention, in California.</span>
         </div>
