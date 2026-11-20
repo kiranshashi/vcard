@@ -119,18 +119,19 @@ export function CallingCard() {
         <div className="hero-index" aria-hidden="true">INDEPENDENT BY DESIGN <span>—</span> EST. 2018</div>
       </section>
 
-      <section className="about-strip" id="about" aria-label="What I do">
-        <div className="about-intro">
-          <span className="section-number">01 — A GOOD FIT FOR</span>
-          <p>Small teams with<br />big-hearted ambition.</p>
-        </div>
-        <ul className="specialties">
-          <li><span>01</span> Brand identity</li>
-          <li><span>02</span> Digital experiences</li>
-          <li><span>03</span> Creative direction</li>
-        </ul>
-        <div className="about-location"><MapPin aria-hidden="true" /><span>Based in Bangalore, India<br />Available worldwide</span></div>
-      </section>
+<section className="about-strip" id="about" aria-label="What I do">
+          <div className="about-intro">
+            <span className="section-number">01 — IDEAL FOR</span>
+            <p>Small teams with<br />{" "}big-hearted ambition.</p>
+          </div>
+          <ul className="specialties">
+            <li><span>01</span> Custom Web Applications</li>
+            <li><span>02</span> NetSuite &amp; SuiteCommerce</li>
+            <li><span>03</span> System Integrations</li>
+            <li><span>04</span> Technical Consulting</li>
+          </ul>
+          <div className="about-location"><MapPin aria-hidden="true" /><span>Available for remote projects worldwide</span></div>
+        </section>
 
       <footer className="site-footer">
         <a className="footer-email" href={`mailto:${email}`}>Have a good one in mind? <span>Let&apos;s make it real.</span></a>
