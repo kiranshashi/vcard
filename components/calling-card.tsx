@@ -54,7 +54,7 @@ export function CallingCard() {
     <main className="site-shell">
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Shashi Kiran, home">
-          <span className="wordmark-mark" aria-hidden="true">MC</span>
+          <span className="wordmark-mark" aria-hidden="true">SK</span>
           <span className="wordmark-copy">
             <strong>Shashi Kiran</strong>
             <span>Independent Consultant</span>
@@ -90,8 +90,8 @@ export function CallingCard() {
           <div className="card-image-wrap">
             <Image
               className="card-image"
-              src="/profile-maya.png"
-              alt="Portrait shown on the calling card"
+              src="/calling-card-studio.png"
+              alt="Sunlit studio desk with an open notebook and muted color swatches"
               fill
               priority
               sizes="(max-width: 760px) 88vw, 420px"
@@ -106,7 +106,7 @@ export function CallingCard() {
                 <h2>Shashi Kiran</h2>
                 <p className="card-role">Independent Consultant</p>
               </div>
-              <span className="card-monogram" aria-hidden="true">M<span>.</span></span>
+              <span className="card-monogram" aria-hidden="true">SK<span>.</span></span>
             </div>
             <div className="card-contact-row">
               <a className="email-link" href={`mailto:${email}`}>{email}</a>
